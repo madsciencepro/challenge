@@ -1,0 +1,54 @@
+/* Color Palette and Fonts */
+:root {
+  --clr-cyan: #4AC1FF;
+  --clr-slate: #666F77;
+  --clr-gray: #BBB;
+  --clr-white: #FFF;
+
+  --ff-primary: 'Open Sans', sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove any margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+

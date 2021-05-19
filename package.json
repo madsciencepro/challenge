@@ -1,0 +1,32 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "Front-End Challenge",
+  "main": "index.js",
+  "scripts": {
+    "development": "mix",
+    "dev": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production",
+    "prod": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madsciencepro/challenge.git"
+  },
+  "keywords": [],
+  "author": "Tony Wilson <tony_wilson@zohomail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madsciencepro/challenge/issues"
+  },
+  "homepage": "https://github.com/madsciencepro/challenge#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.19",
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1"
+  }
+}
