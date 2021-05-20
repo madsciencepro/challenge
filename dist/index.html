@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
     <a href="#main-content" class="visually-hidden">Skip to main content</a>
@@ -40,28 +41,53 @@
     </div>
 
     <!-- Hero -->
-    <div class="container">
-      <div class="hero-image">
-        <h2 class="hero-title">THIS IS THE HERO SECTION</h2>
-        <h2 class="hero-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <section class="hero-section">
+      <div class="hero-image-div">
+        <img class="hero-image" srcset="
+              assets/img/hero@3x.jpg 3x,
+              assets/img/hero@2x.jpg 2x"
+              src="assets/img/hero.jpg"
+              alt="Hero Image"
+        >
       </div>
-    </div>
+      <div class="hero-text-div">
+        <span class="hero-text">
+          <p class="hero-title">THIS IS THE HERO SECTION</p>
+          <p class="hero-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="btn-cta">CTA BUTTON</button>
+        </span>
+      </div>
+    </section>
 
     <!-- Main Content -->
     <main id="main" role="main">
       <a id="main-content" tabindex="-1"></a>
       <section>
-        <h1>THIS IS THE H1 FOR THE PAGE</h1>
+        <h1 class="headline">THIS IS THE H1 FOR THE PAGE</h1>
         <h1 class="intro-text">Tempus adipiscing commodo ut aliquam blandit</h1>
-        <div class="cards">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+        <div class="container-narrow">
+          <div class="cards" id="cards">
+            <div class="card">
+              <div class="circle"><i class="fas fa-cog"></i></div>
+              <h3>Justo placerat</h3>
+              <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
+            </div>
+            <div class="card">
+              <div class="circle"><i class="fas fa-cog"></i></div>
+              <h3>Justo placerat</h3>
+              <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
+            </div>
+            <div class="card">
+              <div class="circle"><i class="fas fa-cog"></i></div>
+              <h3>Justo placerat</h3>
+              <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc tincidunt lobortis.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
     <footer></footer>
-    <script src="/assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
