@@ -10,27 +10,49 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <a href="#main-content">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+
     <!-- Header -->
-    <header role="banner">
-      <div class="branding"></div>
-      <nav role="navigation">
-        <ul>
-          <li>ABOUT</li>
-          <li>SERVICES</li>
-          <li>CAREERS</li>
-          <li>BLOG</li>
-          <li>CONTACT</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="hero"></div>
+    <div class="container">
+      <header role="banner">
+        <div class="header-region">
+          <div class="branding">
+            <a href="/" rel="home" class="site-logo"> 
+              <img srcset="
+              assets/img/logo@3x.png 3x,
+              assets/img/logo@2x.png 2x"
+              src="assets/img/logo.png"
+              alt="Home"
+              >
+            </a>
+          </div>
+          <nav role="navigation">
+            <ul class="main-menu">
+              <li class="menu-item"><a href="#">ABOUT</a></li>
+              <li class="menu-item"><a href="#">SERVICES</a></li>
+              <li class="menu-item"><a href="#">CAREERS</a></li>
+              <li class="menu-item"><a href="#">BLOG</a></li>
+              <li class="menu-item"><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Hero -->
+    <div class="container">
+      <div class="hero-image">
+        <h2 class="hero-title">THIS IS THE HERO SECTION</h2>
+        <h2 class="hero-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      </div>
+    </div>
+
     <!-- Main Content -->
     <main id="main" role="main">
       <a id="main-content" tabindex="-1"></a>
       <section>
         <h1>THIS IS THE H1 FOR THE PAGE</h1>
-        <div class="intro-text">Tempus adipiscing commodo ut aliquam blandit</div>
+        <h1 class="intro-text">Tempus adipiscing commodo ut aliquam blandit</h1>
         <div class="cards">
           <div class="card"></div>
           <div class="card"></div>

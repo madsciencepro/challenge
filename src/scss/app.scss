@@ -1,9 +1,11 @@
 /* Color Palette and Fonts */
 :root {
-  --clr-cyan: #4AC1FF;
-  --clr-slate: #666F77;
-  --clr-gray: #BBB;
+  --clr-bright-cyan: #4AC1FF;
+  --clr-slate-grey: #666F77;
+  --clr-very-light-gray: #BBB;
   --clr-white: #FFF;
+  --clr-black: #000D0C;
+  --clr-dark-slate-grey: #555f66;
 
   --ff-primary: 'Open Sans', sans-serif;
 }
@@ -13,6 +15,17 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: var(--clr-slate-grey);
+  background-color: var(--clr-white);
 }
 
 /* Remove any margins */
@@ -33,22 +46,117 @@ dd {
   margin: 0;
 }
 
-/* Set core body defaults */
-body {
+h1 {
   font-family: var(--ff-primary);
+  font-size: 2rem;
   font-weight: 400;
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.text-center {
+  line-height: 0.88;
+  letter-spacing: 2.4px;
   text-align: center;
+  color: var(--clr-slate-grey);
 }
 
+h1.intro-text {
+    font-size: 1.188rem;
+    line-height: 1.63;
+    letter-spacing: 0.19px;
+    color: var(--clr-very-light-gray);
+}
+
+.header-region {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+
+  li:last-child {
+    background-color: var(--clr-bright-cyan);
+    border-radius: 5px;
+    padding: 0.813rem 0;
+
+    a {
+      color: var(--clr-white);
+    }
+
+  }
+
+}
+
+.menu-item {
+
+  a {
+    font-family: var(--ff-primary);
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1.56;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: var(--clr-dark-slate-grey);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 1rem;
+  }
+
+}
+
+.hero-image {
+  background-image: url("../img/hero.jpg");
+  background-color: var(--clr-very-light-gray);
+}
+
+.hero-title {
+  font-family: var(--ff-primary);
+  font-size: 2.813rem;
+  font-weight: 600;
+  line-height: 0.62;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+
+.hero-body {
+  font-family: var(--ff-primary);
+  font-size: 1.188rem;
+  font-weight: normal;
+  line-height: 1.47;
+  letter-spacing: 0.48px;
+  text-align: center;
+  text-transform: none;
+  color: var(--clr-white);
+}
+
+.cta-button {
+  width: 203px;
+  height: 39px;
+  margin: 27px 186px 0;
+  padding: 14px 46px 13px 49px;
+  border-radius: 5px;
+  background-color: var(--clr-bright-cyan);
+}
+
+header,
+section {
+  padding: 3rem 0;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 75rem);
+}
+
+.visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+}
