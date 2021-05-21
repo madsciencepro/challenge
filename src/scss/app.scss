@@ -69,11 +69,30 @@ h1.intro-text {
     color: var(--clr-very-light-gray);
 }
 
-.header-region {
+.navbar {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    color: var(--clr-dark-slate-grey);
+    font-size: 24px;
+    line-height: 1;
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
+
 }
 
 header {
@@ -105,7 +124,7 @@ header {
 
 /* Main Menu */
 .main-menu {
-  display: flex;
+  // display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
@@ -128,8 +147,35 @@ header {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .main-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 2.6rem;
+    width: 100%;
+    background-color: var(--clr-white);
+    padding: 1rem;
+  }
+
+  .main-menu li:last-child {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 849px) {
+
+  .main-menu {
+    display: flex;
+  }
+
+}
+
+.active {
+    display: flex;
+}
+
 .menu-item {
-    padding: 0 1.56rem;
+    padding: 0.4rem 1.56rem;
 
   a {
     font-family: var(--ff-primary);
@@ -180,6 +226,10 @@ header {
   justify-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.hero-text {
+  text-align: center;
 }
 
 .hero-title {
@@ -247,7 +297,7 @@ header {
   border: solid 1px var(--clr-very-light-gray);
   background-color: var(--clr-white);
 
-  h3 {
+  h2 {
     font-size: 1.125rem;
     font-weight: normal;
     text-transform: uppercase;

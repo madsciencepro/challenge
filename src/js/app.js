@@ -1,3 +1,12 @@
+// Navbar Toggle
+
+let mainNav = document.getElementById('main-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+
 // Fade Cards in on page load.
 
 var opacity = 0;
